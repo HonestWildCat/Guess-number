@@ -115,6 +115,10 @@ input{
     transition: background-color 0.25s;
 }
 
+.highlight-btn{
+    line-height: 0px;
+}
+
 .num-btn:disabled, .highlight-btn:disabled, .back-btn:disabled{
     background: var(--scheme-color-2) !important;
 }

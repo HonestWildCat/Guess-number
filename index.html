@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startGame()">
+    <header>
+        <button id="rules-btn" class="menu-btn" onclick="showRules()">?</button>
+        <h1>Guess number</h1>
+        <button id="try-again-btn" class="menu-btn" onclick="clearPreviousTry(); startGame();">&#8634;</button>
+    </header>
+
+    <main>
+        <div id="game-box">
+            <div id="input-box">
+                <input type="number" placeholder="  " class="1" readonly>
+                <input type="number" placeholder="  " class="2" readonly>
+                <input type="number" placeholder="  " class="3" readonly>
+                <input type="number" placeholder="  " class="4" readonly>
+            </div>
+
+            <div id="keys-box">
+                <button class="num-btn left-up-corner" readonly>1</button>
+                <button class="num-btn" readonly>2</button>
+                <button class="num-btn right-up-corner" readonly>3</button>
+
+                <button class="num-btn" readonly>4</button>
+                <button class="num-btn" readonly>5</button>
+                <button class="num-btn" readonly>6</button>
+
+                <button class="num-btn" readonly>7</button>
+                <button class="num-btn" readonly>8</button>
+                <button class="num-btn" readonly>9</button>
+
+                <button class="highlight-btn left-down-corner" onclick="changeFlagMode(this)" readonly>&#9873;</button>
+                <button class="num-btn" readonly>0</button>
+                <button class="back-btn right-down-corner" readonly onclick="erasePrevious()"><</button>
+            </div>
+        </div>
+
+        <div id="result-table-box">
+            <table id="result-table">
+                <thead>
+                    <th>№</th>
+                    <th>Число</th>
+                    <th>Общее</th>
+                    <th>На месте</th>
+                </thead>
+                <tbody id="result-table-content">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div id="modal-window" onclick="hideModal()">
+        <div id="modal-content-box">
+            <h1 id="modal-content-header">Guess number rules</h1>
+            <div id="modal-content-text-box">
+                <div>
+                </div>
+                <button>OK</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="parallax-box">
+        <div class="parallax"></div>
+        <div class="parallax"></div>
+        <div class="parallax"></div>
+        <div class="parallax"></div>
+        <div class="parallax"></div>
+        <div class="parallax"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
