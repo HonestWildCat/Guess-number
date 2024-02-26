@@ -185,8 +185,8 @@ function erasePrevious(){
 function showRules(){
     modalContentHeader.innerText = "Guess number rules";
     const childNodes = [];
-    const helpText = ["Компьютер задумывает четыре различные цифры из 0,1,2,...9. Игрок делает ходы, чтобы узнать эти цифры и их порядок.", "Каждый ход состоит из четырёх цифр, 0 может стоять на первом месте.", "В ответ компьютер показывает число отгаданных цифр, стоящих на своих местах (на месте) и число отгаданных цифр, стоящих не на своих местах (общее)."];
-    for(let i = 0; i < 3; i++){
+    const helpText = ["The game’s goal is to decipher the secret four-digit code by trial and error.", "The digits in the secret number are unique (no repetition).", "To decipher code, you should input four-digit number and analyse the feedback in the table.", "Number of inputed digits that present in the secret number but stand in the wrong position are showed in “Guessed” column.", "Number of inputed digits that present in the secret number and in the correct position are showed in “In place” column.", "By pressing the '<' button you can erase the last character entered.", "Also, you can mark numbers in green or red by pressing the flag button to switch its mode. The flag has 3 modes:", "- Black (Guessing mode)", "- Green (Marking mode)", "- Red (Marking mode)", "In green and red flag modes, the buttons are not pressed."];
+    for(let i = 0; i < helpText.length; i++){
         const paragraph = document.createElement("p");
         paragraph.classList.add("modal-content-text");
         paragraph.innerText = helpText[i];
