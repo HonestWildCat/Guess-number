@@ -196,6 +196,7 @@ td{
     align-items: center;
     background-color: var(--scheme-color-3);
     margin-top: 10vmax;
+    padding-bottom: 2vh;
     text-align: center;
     border-radius: var(--border-radius);
     box-shadow: 0.5vh 0.5vh 0.3vh rgba(0, 0, 0, 0.5), inset 0 0.3vh 0.1vh var(--scheme-color-3-light);
@@ -236,6 +237,13 @@ td{
 }
 
 .victory-text {
+    text-align: center;
+}
+
+#modal-content-text-box>button{
+    padding-top: 1vh;
+    height: fit-content;
+    padding-bottom: 1vh;
     text-align: center;
 }
 
@@ -285,7 +293,7 @@ td{
 
     #modal-content-text-box{
         width: 96%;
-        height: 85%;
+        height: fit-content;
     }
 
     .modal-content-text {
@@ -317,7 +325,7 @@ td{
 
         #modal-content-text-box{
             width: 96%;
-            height: 80%;
+            height: fit-content;
         }
 
         header>h1 {
@@ -340,7 +348,7 @@ td{
 
         #modal-content-text-box{
             width: 96%;
-            height: 85%;
+            height: fit-content;
         }
     }
 
@@ -396,7 +404,8 @@ td{
 
     #modal-content-text-box{
         width: 96%;
-        height: 85%;
+        height: fit-content;
+        font-size: 1.15em;
     }
 
     .modal-content-text {
@@ -487,11 +496,6 @@ td{
             height: 80%;
         }
 
-        #modal-content-text-box{
-            width: 96%;
-            height: 78%;
-        }
-
         .modal-content-text {
             font-size: 1em;
         }
@@ -541,11 +545,6 @@ td{
             height: 5vmax;
             margin: 0.1vmax 0;
             font-size: 3em;
-        }
-
-        #modal-content-text-box{
-            width: 96%;
-            height: 82%;
         }
 
         .modal-content-text {
@@ -616,11 +615,6 @@ td{
             height: 3.5vmax;
             margin: 0.1vmax 0;
             font-size: 4em;
-        }
-
-        #modal-content-text-box{
-            width: 96%;
-            height: 78%;
         }
     }
 }
